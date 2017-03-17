@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "moduleResolution": "node",
+        "sourceMap": false,
+        "allowJs": true,
+        "declaration": false,
+        "removeComments": false,
+        "noImplicitAny": false,
+        "outDir": "typeScript",
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "types": [
+            "core-js",
+            "node",
+            "cucumber",
+            "selenium-webdriver"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        "typescript"
+    ]
+}
