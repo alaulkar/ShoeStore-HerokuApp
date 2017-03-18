@@ -5,6 +5,7 @@ This project demonstrates the basic protractor-cucumber-typescript framework pro
 To Get Started
 --------------
 **Pre-requisites**
+
 1.NodeJS installed globally in the system.
 https://nodejs.org/en/download/
 
