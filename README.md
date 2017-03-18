@@ -1,15 +1,17 @@
-##ShoeStore tests using Cucumber Guide   
+ShoeStore tests using Cucumber Guide   
+=====================================
 This project demonstrates the basic protractor-cucumber-typescript framework project setup.
 
-###To Get Started
-
-####Pre-requisites
+To Get Started
+--------------
+**Pre-requisites**
 1.NodeJS installed globally in the system.
 https://nodejs.org/en/download/
 
 2.Chrome or Firefox browsers installed.
 
-####Setup Scripts
+Setup Scripts
+-------------
 * Clone the repository into a folder
 * Go inside the folder and run following command from terminal/command prompt
 ```
@@ -22,7 +24,8 @@ OR if yarn is installed
 
 * All the dependencies from package.json and ambient typings would be installed in node_modules folder.
 
-####Run Scripts
+Run Scripts
+----------
 
 * First step is to fire up the selenium server which could be done in many ways,  **webdriver-manager** proves very handy for this.
 
@@ -41,8 +44,10 @@ That should start your selenium server!
 ```
 * It launches the Chrome Browser and run the scripts
 
-####Features
-####Email Feature
+Features
+--------
+Email Feature
+------------
 ```
 Feature: email submission for reminder 
   As a user of Shoe store
@@ -56,7 +61,8 @@ Feature: email submission for reminder
     Then I should see "a success message"
     And submitted email address
 ```
-####Month Feature
+Month Feature
+-------------
 ```
 Feature: Monthly shoe release
   As a user of Shoe store
@@ -86,8 +92,10 @@ Feature: Monthly shoe release
       |     12|
 ```
 
-####Step Definitions
-####email.ts
+Step Definitions
+---------------
+email.ts
+--------
 ```
 import { protractor, browser, element, by } from 'protractor';
 import { defineSupportCode } from 'cucumber';
@@ -124,7 +132,8 @@ defineSupportCode(function ({ Given, When, Then }) {
     });
 })
 ```
-####monthPage.ts
+monthPage.ts
+------------
 ```
 import { protractor, browser, element, by } from 'protractor';
 import { defineSupportCode } from 'cucumber';
@@ -155,9 +164,10 @@ defineSupportCode(function ({Given, When, Then}) {
 })
 ```
 
-####HTML Reports
+HTML Reports
+------------
 Currently this project has been integrated with [cucumber-html-reporter](https://github.com/gkushang/cucumber-html-reporter), which is generated in the `reports` folder when you run `npm test`.
 They can be customized according to user's specific needs.
 
-##Reference 
+**Reference** 
 Used https://github.com/igniteram/protractor-cucumber-typescript for a reference. 
