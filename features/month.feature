@@ -1,7 +1,8 @@
 Feature: Monthly shoe release
   As a user of Shoe store
   I want to be able to visit a link for each month and see the shoes being released
-
+  
+@MonthScenario
   Scenario Outline: Month should display a shoe list with it's image and pricing 
     Given I am on rb-shoe-store.herokuapp.com
     When I click on <month>
@@ -22,5 +23,4 @@ Feature: Monthly shoe release
       |     9 | 
       |     10| 
       |     11| 
-      |     12| 
-      |     13| 
+      |     12|

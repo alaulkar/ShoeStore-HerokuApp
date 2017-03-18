@@ -13,9 +13,8 @@
             "./node_modules/@types"
         ],
         "types": [
-            "core-js",
-            "node",
             "cucumber",
+            "node",
             "selenium-webdriver"
         ]
     },

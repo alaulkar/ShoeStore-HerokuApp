@@ -10,7 +10,7 @@ defineSupportCode(function ({ Given, When, Then }) {
     var homePage = new HomePageObject();
     var email;
 
-    Given(/^I am on rb-shoe-store.herokuapp.com$/, () => {
+    Given(/^I am on home page$/, () => {
         browser.get('https://rb-shoe-store.herokuapp.com/');
         return expect(homePage.emailInput.isDisplayed()).to.be.true;
     });

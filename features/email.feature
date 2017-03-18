@@ -4,7 +4,7 @@ Feature: email submission for reminder
 
   @emailScenario
   Scenario: user should be able to access email input field and able to submit a valid email address  
-    Given I am on rb-shoe-store.herokuapp.com
+    Given I am on home page
     When I provide a valid email address
     And click "Submit"
     Then I should see "a success message"

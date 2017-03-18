@@ -1,45 +1,44 @@
 {
-    "name": "shoe-store",
-    "version": "0.0.1",
-    "description": "",
-    "scripts": {
-        "e2e": "npm run protractor",
-        "pree2e": "npm run webdriver:update -- --standalone",
-        "test": "protractor /config/protractor.conf.ts",
-        "protractor": "protractor",
-        "webdriver-manager": "webdriver-manager",
-        "webdriver:start": "npm run webdriver-manager start",
-        "webdriver:update": "npm run webdriver-manager update"
-    },
-    "dependencies": {
-        "protractor": "^5.1.1",
-        "ts-node": "^2.0.0",
-        "typescript": "^2.2.1"
-    },
-    "devDependencies": {
-        "@types/cucumber": "^0.0.38",
-        "@types/node": "~7.0.5",
-        "@types/selenium-webdriver": "~2.53.39",
-        "awesome-typescript-loader": "~3.0.4-rc.2",
-        "protractor": "~5.1.1",
-        "protractor-jasmine2-html-reporter": "0.0.7",
-        "typescript": "2.1.5",
-        "chai": "^3.5.0",
-        "chai-as-promised": "^5.3.0",
-        "cucumber": "^2.0.0-rc.8",
-        "cucumber-html-reporter": "^0.3.7",
-        "mkdirp": "^0.5.1",
-        "protractor-cucumber-framework": "^1.0.1"
-    },
-    "repository": {
-        "url": "https://github.com/alaulkar/ShoeStore-HerokuApp"
-    },
-    "author": {
-        "name": "Amit Laulkar",
-        "email": "amitlaulkar@gmail.com"
-    },
-    "engines": {
-        "node": ">= 6.9.5",
-        "npm": ">= 3"
-    }
+  "name": "shoe-store",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "tsc": "tsc",
+    "e2e": "npm run protractor",
+    "pree2e": "npm run webdriver:update -- --standalone",
+    "test": "protractor ./config/protractor.conf.js",
+    "webdriver-manager": "webdriver-manager",
+    "webdriver:start": "npm run webdriver-manager start",
+    "webdriver:update": "npm run webdriver-manager update"
+  },
+  "dependencies": {
+    "protractor": "^5.1.1",
+    "ts-node": "^2.0.0",
+    "typescript": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/cucumber": "^0.0.38",
+    "@types/node": "~7.0.5",
+    "@types/selenium-webdriver": "~2.53.39",
+    "awesome-typescript-loader": "~3.0.4-rc.2",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "cucumber": "^2.0.0-rc.9",
+    "cucumber-html-reporter": "^0.3.7",
+    "mkdirp": "^0.5.1",
+    "protractor-cucumber-framework": "^1.0.1"
+  },
+  "repository": {
+    "url": "https://github.com/alaulkar/ShoeStore-HerokuApp"
+  },
+  "author": {
+    "name": "Amit Laulkar",
+    "email": "amitlaulkar@gmail.com"
+  },
+  "engines": {
+    "node": ">= 6.9.5",
+    "npm": ">= 3"
+  }
+  
 }
