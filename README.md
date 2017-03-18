@@ -1,6 +1,5 @@
-###ShoeStore tests using Cucumber Guide   
+##ShoeStore tests using Cucumber Guide   
 This project demonstrates the basic protractor-cucumber-typescript framework project setup.
-
 
 ###To Get Started
 
@@ -43,7 +42,7 @@ That should start your selenium server!
 * It launches the Chrome Browser and run the scripts
 
 ####Features
-#####Email Feature
+####Email Feature
 ```
 Feature: email submission for reminder 
   As a user of Shoe store
@@ -57,7 +56,7 @@ Feature: email submission for reminder
     Then I should see "a success message"
     And submitted email address
 ```
-#####Month Feature
+####Month Feature
 ```
 Feature: Monthly shoe release
   As a user of Shoe store
@@ -88,7 +87,7 @@ Feature: Monthly shoe release
 ```
 
 ####Step Definitions
-#####email.ts
+####email.ts
 ```
 import { protractor, browser, element, by } from 'protractor';
 import { defineSupportCode } from 'cucumber';
@@ -125,7 +124,7 @@ defineSupportCode(function ({ Given, When, Then }) {
     });
 })
 ```
-#####monthPage.ts
+####monthPage.ts
 ```
 import { protractor, browser, element, by } from 'protractor';
 import { defineSupportCode } from 'cucumber';
